@@ -11,11 +11,17 @@ sudo sh get-docker.sh && rm get-docker.sh
 # setup current user for docker
 sudo usermod -aG docker $dockeruser
 
-# get taserver image
-docker pull public.ecr.aws/i2q9d4v7/taserver:latest
-docker tag public.ecr.aws/i2q9d4v7/taserver:latest taserver
+#download ta server repository
+rm -rf ./taserver
+mkdir ./taserver
+git clone https://github.com/JigglyJoogins/taserver-deploy.git ./taserver
 
-# download helper script
-wget -O taserver.sh "https://raw.githubusercontent.com/jigglyjoogins/taserver-deploy/master/docker/taserver.sh"
+#create docker image
+cd ./taserver/docker
+docker image prune --force
+docker container prune --force
+DOCKER_BUILDKIT=1 docker build . -t taserver
+
+# execute helper script
 chmod +x taserver.sh
 ./taserver.sh -d gamesettings
