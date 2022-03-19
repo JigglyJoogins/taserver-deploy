@@ -12,14 +12,14 @@ This ARM template will deploy this project as a Windows VM in azure. The network
 This template also provides presets for various game types, server name, password, and admin password.
 
 The full deployment takes about 10 minutes and the server should appear in the community server browser soon afterwards.
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-deploy%2Fmaster%2Fazure%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigglyjoogins%2Ftaserver-deploy%2Fmaster%2Fazure%2Fazuredeploy.json)
 
 ### Deploy to AWS / Other Providers
 
 You can also deploy cloud providers such as AWS by creating your own Windows EC2 or other VPS instance, and running the commands below in **powershell**:
 
 ```
-> curl.exe -o taserver_setup.ps1 https://raw.githubusercontent.com/chickenbellyfin/taserver-deploy/master/taserver_setup.ps1
+> curl.exe -o taserver_setup.ps1 https://raw.githubusercontent.com/jigglyjoogins/taserver-deploy/master/taserver_setup.ps1
 >  .\taserver_setup.ps1
 ```
 

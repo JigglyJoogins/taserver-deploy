@@ -14,7 +14,7 @@ _Tested with Ubuntu 20.04_
 This ARM template will deploy this project as a Linux VM in azure. The network security group (firewall) will be pre-configured. 
 The full deployment takes about 10 minutes and the server should appear in the community server browser soon afterwards.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-deploy%2Fmaster%2Fazure%2Fazuredeploy_ubuntu.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigglyjoogins%2Ftaserver-deploy%2Fmaster%2Fazure%2Fazuredeploy_ubuntu.json)
 
 
 ### Deploy to AWS / Other Providers
@@ -24,7 +24,7 @@ You can also deploy cloud providers such as AWS by creating your own Ubuntu EC2 
 ```
 cd ~  # Optional, script will work outside of home dir too
 
-wget https://raw.githubusercontent.com/chickenbellyfin/taserver-deploy/ubuntu/taserver_setup_ubuntu.sh
+wget https://raw.githubusercontent.com/jigglyjoogins/taserver-deploy/ubuntu/taserver_setup_ubuntu.sh
 chmod +x taserver_setup_ubuntu.sh
 ./taserver_setup_ubuntu.sh
 

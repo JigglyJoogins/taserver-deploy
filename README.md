@@ -4,12 +4,12 @@ Cloud deployment templates for [taserver](https://github.com/Griffon26/taserver)
 ## Docker-based install on Ubuntu
 Installs docker and loads the taserver docker image from this project on an Ubuntu host.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-deploy%2Fmaster%2Fdocker%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigglyjoogins%2Ftaserver-deploy%2Fmaster%2Fdocker%2Fazuredeploy.json)
 
 #### Non-Azure
 Create an Ubuntu VM on Azure/AWS/etc, and run the following commands:
 ```
-wget https://raw.githubusercontent.com/chickenbellyfin/taserver-deploy/master/taserver_setup_ubuntu_docker.sh
+wget https://raw.githubusercontent.com/jigglyjoogins/taserver-deploy/master/taserver_setup_ubuntu_docker.sh
 chmod +x taserver_setup_ubuntu_docker.sh
 ./taserver_setup_ubuntu_docker.sh
 ```
@@ -102,7 +102,7 @@ $ docker kill taserver_my_server_0
 ```
 # Other Deployment Methods:
 ### Deploy To Azure (Windows Server)
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/chickenbellyfin/taserver-deploy/docker/windows/azuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/jigglyjoogins/taserver-deploy/docker/windows/azuredeploy.json)
 
 See [Windows README](/windows/README.md) for details.
 
@@ -110,6 +110,6 @@ See [Windows README](/windows/README.md) for details.
 ### DEPRECATED: Non-docker Deploy to Azure (Ubuntu)
 This method of deploying taserver is being deprecated in favor of the docker-based tools.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-deploy%2Fdocker%2Fubuntu%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjigglyjoogins%2Ftaserver-deploy%2Fdocker%2Fubuntu%2Fazuredeploy.json)
 
 See [Ubuntu README](/ubuntu/README.md) for details.
