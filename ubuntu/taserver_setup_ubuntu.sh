@@ -30,7 +30,7 @@ unzip -q taserver.zip && rm taserver.zip
 mv "taserver-$TASERVER_RELEASE_TAG" "taserver"
 
 # get taserver-deploy
-wget -O taserver-deploy.zip "https://github.com/chickenbellyfin/taserver-deploy/archive/refs/heads/$TASERVER_DEPLOY_BRANCH.zip"
+wget -O taserver-deploy.zip "https://github.com/JigglyJoogins/taserver-deploy/archive/refs/heads/$TASERVER_DEPLOY_BRANCH.zip"
 unzip -q taserver-deploy.zip && rm taserver-deploy.zip
 mv "taserver-deploy-$TASERVER_DEPLOY_BRANCH" "taserver-deploy"
 

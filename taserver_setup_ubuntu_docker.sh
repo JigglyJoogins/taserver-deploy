@@ -14,7 +14,7 @@ sudo usermod -aG docker $dockeruser
 #download ta server repository
 rm -rf ./taserver
 mkdir ./taserver
-git clone https://github.com/chickenbellyfin/taserver-deploy.git ./taserver
+git clone https://github.com/JigglyJoogins/taserver-deploy.git ./taserver
 
 #create docker image
 cd ./taserver/docker

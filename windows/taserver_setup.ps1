@@ -24,7 +24,7 @@ log "Fetching dependencies.zip"
 curl.exe -s -o dependencies.zip "https://f000.backblazeb2.com/file/taserver-deploy-packages/dependencies.zip"
 
 log "Fetching taserver-deploy from branch $branch"
-curl.exe -s -L -o taserver-deploy.zip "https://github.com/chickenbellyfin/taserver-deploy/archive/refs/heads/$branch.zip"
+curl.exe -s -L -o taserver-deploy.zip "https://github.com/JigglyJoogins/taserver-deploy/archive/refs/heads/$branch.zip"
 
 log "Extracting Tribes.zip"
 tar -xf Tribes.zip -C $install_dir
