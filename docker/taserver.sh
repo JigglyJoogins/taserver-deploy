@@ -31,7 +31,6 @@ do
       ;;
     c)
       abspath=$(realpath ${OPTARG})
-      pathname="_$(basename $abspath)" # used for container name
       # create server config dir if it does not exist
       mkdir -p $abspath
       # docker flag to mount config dir to /gamesettings in the container
