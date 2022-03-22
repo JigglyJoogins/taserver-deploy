@@ -35,7 +35,7 @@ do
       # create server config dir if it does not exist
       mkdir -p $abspath
       # docker flag to mount config dir to /gamesettings in the container
-      mount_cookedPC="-v ${abspath}:/Tribes/TribesGame/CookedPC/"
+      mount_cookedPC="-v ${abspath}:/app/Tribes/TribesGame/CookedPC/"
       ;;
   esac
 done
