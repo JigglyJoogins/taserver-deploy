@@ -5,12 +5,13 @@
 # port offset should differ by at least 2 between all containers
 set -eux
 
+mount_cookedPC=""
 mount_gamesettings=""
 portoffset="0"
 pathname=""
 detach_option="-d --restart unless-stopped"
 
-while getopts d:p:f flag
+while getopts d:p:f:c flag
 do
   case "$flag" in
     d) 
@@ -27,6 +28,14 @@ do
     f)
       # if run in foreground, cleanup on stop
       detach_option="--rm"
+      ;;
+    c)
+      abspath=$(realpath ${OPTARG})
+      pathname="_$(basename $abspath)" # used for container name
+      # create server config dir if it does not exist
+      mkdir -p $abspath
+      # docker flag to mount config dir to /gamesettings in the container
+      mount_cookedPC="-v ${abspath}:/Tribes/TribesGame/CookedPC/"
       ;;
   esac
 done
@@ -49,6 +58,7 @@ docker run \
   --name "$container_name" \
   $detach_option \
   $mount_gamesettings \
+  $mount_cookedPC \
   --cap-add NET_ADMIN \
   -p "$control_port:$control_port/tcp" \
   -p "$gameserver1_port:$gameserver1_port/tcp" \

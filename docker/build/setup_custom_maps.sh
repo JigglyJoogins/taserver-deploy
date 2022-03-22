@@ -16,3 +16,4 @@ function install_tamods_package() {
 install_tamods_package "https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/master-refshadercache.zip"
 install_tamods_package "https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/custom-maps-asset-pack.zip"
 install_tamods_package "https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/dodge-map-pack.zip"
+install_tamods_package "https://tamods-update.s3-ap-southeast-2.amazonaws.com/packages/evil-map-pack.zip"

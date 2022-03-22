@@ -8,6 +8,9 @@ docker build . -t loginserver
 ### Run
 ```
 docker run -d --cap-add NET_ADMIN -p "9000:9000/tcp" -p "9001:9001/tcp" -p "9080:9080/tcp" loginserver
+
+mkdir taserver
+docker run -d --cap-add NET_ADMIN -p "9000:9000/tcp" -p "9001:9001/tcp" -p "9080:9080/tcp" --mount source=./taserver/,destination=/taserver/ loginserver
 ```
 
 #### Docker Compose
