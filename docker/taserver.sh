@@ -11,7 +11,7 @@ portoffset="0"
 pathname=""
 detach_option="-d --restart unless-stopped"
 
-while getopts d:p:f:c flag
+while getopts d:c:p:f flag
 do
   case "$flag" in
     d) 
